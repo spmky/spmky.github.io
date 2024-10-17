@@ -21,6 +21,16 @@ a:focus {
 	color: #fff;
 }
 
+f {
+	text-decoration: none;
+	color: #fff;
+	outline: none;
+}
+
+f:hover {
+	color: #356BAE;
+}
+
 .hidden {
 	position: absolute;
 	overflow: hidden;
