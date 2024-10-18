@@ -201,17 +201,21 @@ main::before {
 }
 
 /* Logo Centered */
+.outer{
+	width:100%;
+	display: flex;
+	justify-content: center;
+}
 
 .nameplate {
 	position: fixed;
-	bottom: 0;
-	right: 0;
-	width: 100%;
-	height: 60%;
-	text-align: center;
-	display: block;
 	margin: auto;
-	text-align: center;
+	bottom: 0;
+	width: 512px;
+	height: 60%;
+	background: url(../img/SM_Logo_White_03.svg);
+	background-repeat: no-repeat;
+	background-size: 512px 128px;
 }
 
 /* Profile Links */
@@ -229,16 +233,9 @@ main::before {
 }
 
 .content--related a,
-.github {
-	text-decoration: underline;
-}
 
 .content--related a:hover,
 .content--related a:focus,
-.github:hover,
-.github:focus {
-	text-decoration: none;
-}
 
 .content__text {
 	font-size: 0.865em;
@@ -253,7 +250,7 @@ main::before {
 
 .media-item {
 	display: inline-block;
-	padding: 5em;
+	padding: 2em;
 	vertical-align: top;
 	transition: color 0.3s;
 }
@@ -310,10 +307,10 @@ main::before {
 	height: 100vh;
 }
 
-/* Colors for demos */
+/* Small Screen Sizing */
 
 
-@media screen and (max-width: 50em) {
+@media screen and (max-width: 30em) {
 	.content--header {
 		padding: 1em 0.5em 0;
 	}
@@ -325,12 +322,26 @@ main::before {
 		margin: 0;
 	}
 	.nameplate {
-		position: relative;
-		width: 100%;
-		margin: 0;
-		padding: 0.5em;
-		transform: none;
-		top: auto;
+		background-size: 400px 100px;
+		width: 400px;
+		height: 55%;
+	}
+}
+
+@media screen and (max-width: 22em) {
+	.content--header {
+		padding: 1em 0.5em 0;
+	}
+	.content__top {
 		display: block;
+		text-align: center;
+	}
+	.main-tagline {
+		margin: 0;
+	}
+	.nameplate {
+		background-size: 340px 85px;
+		width: 340px;
+		height: 55%;
 	}
 }
