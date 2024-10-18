@@ -310,7 +310,7 @@ main::before {
 /* Small Screen Sizing */
 
 
-@media screen and (max-width: 30em) {
+@media screen and (max-width: 480px) {
 	.content--header {
 		padding: 1em 0.5em 0;
 	}
@@ -328,7 +328,7 @@ main::before {
 	}
 }
 
-@media screen and (max-width: 22em) {
+@media screen and (max-width: 360px) {
 	.content--header {
 		padding: 1em 0.5em 0;
 	}
@@ -338,6 +338,9 @@ main::before {
 	}
 	.main-tagline {
 		margin: 0;
+	}
+	.content--main {
+		min-height: 400vh;
 	}
 	.nameplate {
 		background-size: 340px 85px;
